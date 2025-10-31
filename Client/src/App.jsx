@@ -7,6 +7,7 @@ import AdminAddProduct from './components/AdminAddProduct'
 import AdminLogin from './components/AdminLogin'
 import Success from './components/Success'
 import Navbar from './components/Home'
+import './App.css'
 
 
 
