@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import AdminAddProduct from './components/AdminAddProduct'
 import AdminLogin from './components/AdminLogin'
 import Success from './components/Success'
+import Navbar from './components/Home'
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
     return (
         <CartProvider>
                 <div>
+                    <Navbar/>
                     <h1>MERN Shop</h1>
                     <Routes>
                         {/* USER SIDE */}
@@ -22,10 +24,11 @@ const App = () => {
                             element={
                                 <>
                                     <ProductList />
-                                    <Cart />
+                                    
                                 </>
                             }
                         />
+                        <Route path="/Cart" element={<Cart/>}/>
 
                         <Route path="/success" element={<Success />} />
                         {/* ADMIN SIDE */}
